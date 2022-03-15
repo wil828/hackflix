@@ -8,7 +8,7 @@ import { useEffect, useState} from 'react';
 //  in order to grab information from a URL (when using Router) we can useParams Hook
 import { useParams } from 'react-router-dom'
 
-function MovieInfo(props) {
+function MovieInfo() {
     //same thing as useParams
     // console.log(props);
 
