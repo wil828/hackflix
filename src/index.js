@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// in order to use routing logic within our app, we have to import the WEB App Router into our project
+import { BrowserRouter } from 'react-router-dom';
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* in order to enable React Router to control and manage all of the URLS within this SPA, we have to wrap Rouyter around our application */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
