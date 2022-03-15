@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom'
 
 function MovieInfo(props) {
     //same thing as useParams
-    console.log(props);
+    // console.log(props);
 
     //  let's call the useParams Hook and see the 
     const { movieId: movie_id } = useParams();
@@ -30,7 +30,7 @@ function MovieInfo(props) {
                 api_key: '4d0a9a482be2105d548c38eb54491320'
             }
         }).then( function(movieInfo) {
-            console.log(movieInfo)
+            // console.log(movieInfo)
             setDetails(movieInfo.data)
             // use the API data and update state
         })
