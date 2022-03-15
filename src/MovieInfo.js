@@ -34,7 +34,7 @@ function MovieInfo(props) {
             setDetails(movieInfo.data)
             // use the API data and update state
         })
-    }, [] )
+    }, [movie_id] )
 
     return (
         <section className="poster">
