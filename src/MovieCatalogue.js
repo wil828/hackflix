@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 function MovieCatalogue() {
 
-    console.log('Catalogue has rendered');
+    // console.log('Catalogue has rendered');
 
     // 3. initialize state to keep track of the movie data which will be returned from the API
     const [ movies, setMovies ] = useState( [] );
@@ -26,11 +26,11 @@ function MovieCatalogue() {
                 include_adult: true
             }
         }).then( function( showMeTheMovies ) {
-            console.log(showMeTheMovies);
+            // console.log(showMeTheMovies);
             
             // 6. save the returned data within state
             setMovies( showMeTheMovies.data.results );
-            console.log(movies);
+            // console.log(movies);
         })
 
         

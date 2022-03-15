@@ -16,8 +16,6 @@ function MovieInfo() {
     const { movieId: movie_id } = useParams();
     // console.log( useParams() );
 
-    // call the usePara
-
     // initialize state to represent the movie details which will be returennd to use from the API
     const [details, setDetails] = useState( {} );
 
@@ -46,7 +44,7 @@ function MovieInfo() {
             </div>
             <div className="poster-image">
                 {/* render the movie poster */}
-                <img src={`https://image.tmdb.org/t/p/w500/${details.poster_path}`} alt={`A move poster for ${details.title}`} />
+                <img src={`https://image.tmdb.org/t/p/w500/${details.poster_path}`} alt={`A movie poster for ${details.title}`} />
             </div>
         </section>
     )
